@@ -1,0 +1,73 @@
+$white: #fafafa;
+$text-color: #535353;
+$gray: #707070;
+
+@mixin roboto{
+  font-family: 'Roboto', sans-serif;
+}
+@mixin playfair{
+  font-family: 'Playfair Display', serif;
+}
+@mixin title{
+  font-size: 72px;
+  font-weight: bold;
+  @include playfair;
+}
+@mixin subtitle{
+  font-size: 40px;
+  font-weight: bold;
+  @include playfair;
+}
+@mixin text{
+  font-size: 16px;
+  @media screen and (max-width: 320px){
+    font-size: 14px;
+  }
+  @include roboto;
+}
+@mixin text-bold{
+  font-size: 16px;
+  @media screen and (max-width: 320px){
+    font-size: 14px;
+  }
+  font-weight: bold;
+  @include roboto;
+}
+@mixin minifytext{
+  font-size: 12px;
+  @include roboto;
+}
+@mixin minifytext-bold{
+  font-size: 12px;
+  font-weight: bold;
+  @include roboto;
+}
+
+@mixin full-screen{
+  height: 100vh;
+  width: 100vw;
+}
+@mixin default-space{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+@mixin shadow{
+  background-image:linear-gradient( -45deg,$text-color   0%, $text-color  50%,rgba(255, 255, 255, 0.10)  50%, rgba(255, 255, 255, 0.10) 100% );
+  background-position: right bottom;
+  background-size: 20px 25px;
+}
+@mixin middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// custom rules
+a,p,li{
+  text-decoration: none;
+  color: $text-color;
+  list-style: none;
+  @include text;
+}
+h2{
+  @include subtitle;
+}
