@@ -3,6 +3,8 @@
     ul
       li
         nuxt-link(to="/boids") boids
+      li
+        nuxt-link(to="/d3") d3 force
 </template>
 
 <script>
