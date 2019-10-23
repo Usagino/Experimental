@@ -1,4 +1,4 @@
-<!-- d3のForce simulationを使用している -->
+pm <!-- d3のForce simulationを使用している -->
 <template lang="pug">
   .container
     #drawing
