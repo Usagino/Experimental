@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
+    "d3": "^5.12.0",
     "fs-web": "^1.0.1",
     "gsap": "^2.1.3",
     "nuxt": "^2.0.0",
